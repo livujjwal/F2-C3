@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600px;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+.left_part {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  background: #0c0e10;
+}
+
+.logo_section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#logo_img {
+  width: 90%;
+}
+.left_h2 {
+  text-align: center;
+  padding-left: 35px;
+  /* margin-left: 25px; */
+}
+.Slogan {
+  text-align: center;
+  color: #ff2424;
+  font-size: 20px;
+  font-weight: 200;
+}
+.link_list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 70px;
+  font-size: 14px;
+}
+.link_h2 {
+  padding-left: 70px;
+}
+
+.right_part {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #111315;
+  overflow-y: scroll;
+}
+#navbar {
+  width: 74%;
+  background: #191d20;
+  position: fixed;
+  top: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0px 20px;
+  z-index: 10;
+}
+.search_bar {
+  margin: 10px;
+  padding: 0px 10px;
+  height: 40px;
+  width: 600px;
+  border-radius: 5px;
+  background: #272a30;
+  display: flex;
+  align-items: center;
+}
+#nav_input {
+  margin: 5px 10px;
+  border: none;
+  background: #272a30;
+  font-size: 16px;
+  color: #878787;
+  font-weight: 400;
+}
+#nav_img {
+  margin: 30px;
+}
+.nav_btn {
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  background-color: #ff2424;
+  font-size: 16px;
+  font-weight: 400;
+  width: 140px;
+}
+#hero_img {
+  position: relative;
+  top: 150px;
+  width: 96%;
+  height: 400px;
+}
+.menu {
+  position: relative;
+  top: 200px;
+  width: 94%;
+}
+#menu_txt {
+  text-align: left;
+}
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.card {
+  width: 340px;
+  height: 350px;
+  border-radius: 10px;
+  background: #191d20;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+#card_img {
+  width: 320px;
+  height: 250px;
+  margin: 0px 5px;
+  padding: 0px 5px;
+}
+.card_text_section {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 15px;
+}
+.card_txt {
+  font-weight: 400;
+  font-size: 20px;
+}
+#add_item {
+  border-radius: 5px;
+}
