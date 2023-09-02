@@ -7,7 +7,7 @@
   font-size: 24px;
   font-weight: 600px;
 }
-body {
+main {
   margin: 0px;
   padding: 0px;
   display: flex;
@@ -16,7 +16,10 @@ body {
   height: 100vh;
 }
 .left_part {
-  width: 25%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 25vw;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -37,7 +40,6 @@ body {
 .left_h2 {
   text-align: center;
   padding-left: 35px;
-  /* margin-left: 25px; */
 }
 .Slogan {
   text-align: center;
@@ -49,20 +51,26 @@ body {
   display: flex;
   flex-direction: column;
   padding-left: 70px;
-  font-size: 14px;
 }
 .link_h2 {
   padding-left: 70px;
 }
-
+.link {
+  font-size: 20px;
+  font-weight: 300;
+}
 .right_part {
+  position: relative;
+  left: 12vw;
   width: 75%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #111315;
-  overflow-y: scroll;
+  overflow-y: auto;
+  white-space: auto;
 }
 #navbar {
   width: 74%;
@@ -118,14 +126,20 @@ body {
   width: 94%;
 }
 #menu_txt {
+  display: flex;
+  justify-content: space-between;
   text-align: left;
 }
 #container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  overflow-y: auto;
+  white-space: auto;
 }
-.card {
+#card:hover {
+  cursor: pointer;
+}
+#card {
   width: 340px;
   height: 350px;
   border-radius: 10px;
@@ -134,22 +148,25 @@ body {
   flex-direction: column;
   margin: 10px;
 }
-#card_img {
-  width: 320px;
-  height: 250px;
-  margin: 0px 5px;
-  padding: 0px 5px;
+::-webkit-scrollbar {
+  display: none;
 }
-.card_text_section {
+#card_img {
+  width: 300px;
+  height: 240px;
+  margin: 10px;
+  border-radius: 10px;
+}
+#card_txt_section {
   height: 100px;
+}
+#card_txt {
+  font-weight: 400;
+  font-size: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0px 15px;
-}
-.card_txt {
-  font-weight: 400;
-  font-size: 20px;
 }
 #add_item {
   border-radius: 5px;
